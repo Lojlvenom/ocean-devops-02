@@ -39,10 +39,6 @@ jobs:
             echo "No requirements.txt found. Skipping dependency installation."
           fi
 
-      # Run the Python script
-      - name: Run Python script
-        run: python main.py
-
       # Run unit tests using unittest (assuming your test file is named test.py)
       - name: Run unit tests
         run: python -m unittest test.py
